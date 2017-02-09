@@ -1,0 +1,32 @@
+This directory contains files for creating a wormGame with easily
+modifyable game objects.
+
+
+Level.h,Level.cpp - the Level class; controls what happens on the actual
+   "playing field" for each level of the game
+
+Level_mods.cpp - member functions of Level that need to be modified when
+   new objects are added to the level.
+ 
+Level_old.cpp - old version of Level.cpp (do a diff to see what has changed)
+
+String.h,String.cpp - the String class (homegrown)
+
+Worm.h,Worm.cpp - the Worm class (a solution to 6_HW in case you want to
+   see one way to do it); only responsible for drawing and movement of the
+	worm.
+
+WormSegment.h,WormSegment.cpp - the WormSegment class, same as in 6_HW
+
+gameDefs.h - global constants (some new ones have been added to eliminate
+   "magic numbers" from the code)
+
+makefile - compiles the wormGame program (be sure you're on Solaris 2.6)
+
+sxwin.h,sxwin.cpp - the sxwin class (with some additions and modifications)
+
+sys_utils.h - two simple classes to handle timing and random numbers
+
+wormGame - sample executable
+
+wormGame.cpp - main program for the game
